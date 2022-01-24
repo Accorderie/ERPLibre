@@ -1,6 +1,17 @@
 # ERPLibre documentation
 Select a guide to install your environment.
 
+## Note for Accorderie
+After installation (make install), to test the demo, do : 
+```bash
+make config_gen_accorderie
+./script/update_manifest_local_prod_accorderie.sh
+make accorderie_install_website_accorderie_demo
+./run.sh -d accorderie
+```
+
+Open a web browser on link : http://127.0.0.1:8069/web/database/manager
+
 ## Easy way to run locally
 Into Ubuntu, minimal dependency:
 ```bash
